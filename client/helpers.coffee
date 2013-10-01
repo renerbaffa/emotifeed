@@ -3,6 +3,7 @@ pages = [
 	"vote"
 	"feedback"
 	"home"
+	"message_feedback"
 ]
 
 window.Helpers = {}

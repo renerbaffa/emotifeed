@@ -4,6 +4,7 @@ class window.AppRouter extends Backbone.Router
 		"vote": "vote"
 		"feedback": "feedback"
 		"home": "home"
+		"message_feedback": "messageFeedback"
 
 	newMessage: ->
 		Session.set "current_page", "new_message"
@@ -16,3 +17,6 @@ class window.AppRouter extends Backbone.Router
 
 	home: ->
 		Session.set "current_page", "home"
+
+	messageFeedback: ->
+		Session.set "current_page", "message_feedback"
