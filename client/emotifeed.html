@@ -1,0 +1,32 @@
+<head>
+	<title>Emotifeed</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+ 
+<body>
+	<div name="main">
+		{{> page}}
+	</div>
+</body>
+
+<template name="page">
+	<div class="container-narrow">
+		<!--Title bar with app name-->
+		<div class="musthead">
+			<h3 class="muted text-center">Emotifeed</h3>
+		</div>
+
+		{{#if is_vote}}
+			{{> vote}}
+		{{/if}}
+		{{#if is_new_message}}
+			{{> new_message}}
+		{{/if}}
+		{{#if is_feedback}}
+			{{> feedback}}
+		{{/if}}
+		{{#if is_home}}
+			{{> home}}
+		{{/if}}
+	</div>
+</template>
